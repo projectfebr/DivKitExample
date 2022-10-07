@@ -1,0 +1,74 @@
+PODS:
+  - DivKit (8.0.0):
+    - DivKit_Base (= 8.0.0)
+    - DivKit_BaseTiny (= 8.0.0)
+    - DivKit_BaseUI (= 8.0.0)
+    - DivKit_CommonCore (= 8.0.0)
+    - DivKit_CommonCoreTiny (= 8.0.0)
+    - DivKit_LayoutKit (= 8.0.0)
+    - DivKit_LayoutKitInterface (= 8.0.0)
+    - DivKit_Networking (= 8.0.0)
+    - DivKit_Serialization (= 8.0.0)
+    - DivKit_TemplatesSupport (= 8.0.0)
+  - DivKit_Base (8.0.0):
+    - DivKit_BaseTiny (= 8.0.0)
+    - DivKit_BaseUI (= 8.0.0)
+  - DivKit_BaseTiny (8.0.0)
+  - DivKit_BaseUI (8.0.0):
+    - DivKit_BaseTiny (= 8.0.0)
+  - DivKit_CommonCore (8.0.0):
+    - DivKit_Base (= 8.0.0)
+    - DivKit_BaseTiny (= 8.0.0)
+    - DivKit_CommonCoreTiny (= 8.0.0)
+  - DivKit_CommonCoreTiny (8.0.0):
+    - DivKit_BaseTiny (= 8.0.0)
+  - DivKit_LayoutKit (8.0.0):
+    - DivKit_BaseTiny (= 8.0.0)
+    - DivKit_BaseUI (= 8.0.0)
+    - DivKit_CommonCore (= 8.0.0)
+    - DivKit_LayoutKitInterface (= 8.0.0)
+  - DivKit_LayoutKitInterface (8.0.0):
+    - DivKit_Base (= 8.0.0)
+    - DivKit_BaseTiny (= 8.0.0)
+    - DivKit_BaseUI (= 8.0.0)
+  - DivKit_Networking (8.0.0):
+    - DivKit_Base (= 8.0.0)
+  - DivKit_Serialization (8.0.0):
+    - DivKit_CommonCore (= 8.0.0)
+  - DivKit_TemplatesSupport (8.0.0):
+    - DivKit_CommonCore (= 8.0.0)
+    - DivKit_Serialization (= 8.0.0)
+
+DEPENDENCIES:
+  - DivKit
+
+SPEC REPOS:
+  trunk:
+    - DivKit
+    - DivKit_Base
+    - DivKit_BaseTiny
+    - DivKit_BaseUI
+    - DivKit_CommonCore
+    - DivKit_CommonCoreTiny
+    - DivKit_LayoutKit
+    - DivKit_LayoutKitInterface
+    - DivKit_Networking
+    - DivKit_Serialization
+    - DivKit_TemplatesSupport
+
+SPEC CHECKSUMS:
+  DivKit: 968b9ca8a52540632a084363f0f11f6243f44606
+  DivKit_Base: 9a61488c19b594b22dd22ea820d4a0ecb39017be
+  DivKit_BaseTiny: 84c676b776cb111a1e7a548494c9e94b35bc665e
+  DivKit_BaseUI: 4fda58fd9930b29936ee16167c4f69fdbfb519f1
+  DivKit_CommonCore: 4554c01e25ad9f06f37d04a09ecbfb3cc1b83cd7
+  DivKit_CommonCoreTiny: d53e59e47bc7b207953a26aa400612a9a3528fbd
+  DivKit_LayoutKit: e019f726e36c879ceb992f2abd5caa80e10707f8
+  DivKit_LayoutKitInterface: d4e113a9a8214153e823f9ccc0fe2f88b84b40e3
+  DivKit_Networking: dafa6f1a25fd091ec6c6382f0327dfa72867c22a
+  DivKit_Serialization: f1ee45e46c10ec7a04d0a3e0fa1f0b9feda96b11
+  DivKit_TemplatesSupport: c838e69d65bdb83824a53c3e364151bc00f68d24
+
+PODFILE CHECKSUM: 30394a25d69ac15bd9675a907ae93a2ad4800a04
+
+COCOAPODS: 1.11.3

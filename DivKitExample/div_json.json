@@ -1,0 +1,310 @@
+{
+    "templates": {
+        "developer": {
+            "type": "container",
+            "background": [
+                {
+                    "type": "solid",
+                    "color": "#FFF"
+                }
+            ],
+            "paddings": {
+                "left": 16,
+                "top": 16,
+                "right": 16,
+                "bottom": 16
+            },
+            "margins": {
+                "bottom": 8
+            },
+            "items": [
+                {
+                    "type": "container",
+                    "orientation": "horizontal",
+                    "items": [
+                        {
+                            "type": "user_avatar",
+                            "$image_url": "avatar"
+                        },
+                        {
+                            "type": "user_name",
+                            "$text": "username"
+                        }
+                    ],
+                    "margins": {
+                        "bottom": 8
+                    }
+                },
+                {
+                    "type": "title",
+                    "$text": "title"
+                }        ],
+            "orientation": "vertical"
+        },
+        "user_name": {
+            "type": "text",
+            "font_size": 13,
+            "text_color": "#414b50",
+            "font_weight": "medium",
+            "width": {
+                "type": "wrap_content"
+            },
+            "alignment_vertical": "center",
+            "margins": {
+                "right": 5
+            }
+        },
+        "user_avatar": {
+            "type": "image",
+            "width": {
+                "type": "fixed",
+                "value": 48
+            },
+            "height": {
+                "type": "fixed",
+                "value": 48
+            },
+            "border": {
+                "corner_radius": 24
+            },
+            "margins": {
+                "right": 5
+            }
+        },
+        "title": {
+            "height": {
+                "type": "wrap_content"
+            },
+            "type": "text",
+            "font_size": 20,
+            "text_color": "#333",
+            "line_height": 23,
+            "font_weight": "medium",
+            "margins": {
+                "bottom": 20
+            }
+        }
+    },
+    "cards": [
+        {
+            "log_id": "developer_card1",
+            "states": [
+                {
+                    "state_id": 0,
+                    "div": {
+                        "type": "container",
+                        "background": [
+                            {
+                                "type": "solid",
+                                "color": "#F0F0F0"
+                            }
+                        ],
+                        "items": [
+                            {
+                                "type": "state",
+                                "div_id": "developer",
+                                "states": [
+                                    {
+                                        "state_id": "1",
+                                        "div": {
+                                            "type": "developer",
+                                            "avatar": "https://api.lorem.space/image/album?w=150&h=150",
+                                            "username": "Джим Хокинс",
+                                            "title": "Молодой парень, первый узнавший о сокровищах от старого пирата.",
+                                            "actions": [
+                                                {
+                                                    "log_id": "switch_state1",
+                                                    "url": "div-action://set_state?state_id=0/developer/2"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "state_id": "2",
+                                        "div": {
+                                            "type": "developer",
+                                            "avatar": "https://api.lorem.space/image/album?w=150&h=150",
+                                            "username": "Джим Хокинс",
+                                            "title": "Молодой парень, первый узнавший о сокровищах от старого пирата. Он отправляется за сокровищами на корабле в качестве юнги. Честный и правильный, немного горяч, но смел и умён. Он всегда оказывается в центре событий. Предусмотрительный, добрый, воспитанный мальчик. Оказавшись на острове, Джим сумел увести корабль в безопасное место, понимая неизбежность “войны”. Попав в руки Сильвера, становится причиной ссоры между ним и пиратами. Сильверу вручают чёрную метку. Благодаря знакомству Джима и Бена Ганна, их путешествие заканчивается удачно.",
+                                            "actions": [
+                                                {
+                                                    "log_id": "switch_state1",
+                                                    "url": "div-action://set_state?state_id=0/developer/1"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "log_id": "developer_card2",
+            "states": [
+                {
+                    "state_id": 0,
+                    "div": {
+                        "type": "container",
+                        "background": [
+                            {
+                                "type": "solid",
+                                "color": "#F0F0F0"
+                            }
+                        ],
+                        "items": [
+                            {
+                                "type": "state",
+                                "div_id": "developer",
+                                "states": [
+                                    {
+                                        "state_id": "1",
+                                        "div": {
+                                            "type": "developer",
+                                            "avatar": "https://api.lorem.space/image/album?w=150&h=150",
+                                            "username": "Сквайр Трелони",
+                                            "title": "Богатый человек, жаждущий приключений.",
+                                            "actions": [
+                                                {
+                                                    "log_id": "switch_state1",
+                                                    "url": "div-action://set_state?state_id=0/developer/2"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "state_id": "2",
+                                        "div": {
+                                            "type": "developer",
+                                            "avatar": "https://api.lorem.space/image/album?w=150&h=150",
+                                            "username": "Сквайр Трелони",
+                                            "title": "Богатый человек, жаждущий приключений. За его средства был куплен корабль, оплачена поездка. Трелони стремится стать лидером, но ему не хватает специальных знаний, выдержки, мудрости. Он настолько болтлив, что рассказал всему городу о поездке за сокровищами Флинта. Из-за этого в команду попало много пиратов и разбойников. Хорошо стреляет.",
+                                            "actions": [
+                                                {
+                                                    "log_id": "switch_state1",
+                                                    "url": "div-action://set_state?state_id=0/developer/1"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "log_id": "developer_card3",
+            "states": [
+                {
+                    "state_id": 0,
+                    "div": {
+                        "type": "container",
+                        "background": [
+                            {
+                                "type": "solid",
+                                "color": "#F0F0F0"
+                            }
+                        ],
+                        "items": [
+                            {
+                                "type": "state",
+                                "div_id": "developer",
+                                "states": [
+                                    {
+                                        "state_id": "1",
+                                        "div": {
+                                            "type": "developer",
+                                            "avatar": "https://api.lorem.space/image/album?w=150&h=150",
+                                            "username": "Дэвид Ливси",
+                                            "title": "Очень мужественный, смелый человек, готов умереть, защищая товарища.",
+                                            "actions": [
+                                                {
+                                                    "log_id": "switch_state1",
+                                                    "url": "div-action://set_state?state_id=0/developer/2"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "state_id": "2",
+                                        "div": {
+                                            "type": "developer",
+                                            "avatar": "https://api.lorem.space/image/album?w=150&h=150",
+                                            "username": "Дэвид Ливси",
+                                            "title": "Очень мужественный, смелый человек, готов умереть, защищая товарища. Работает судьёй. Отличный врач, умный, дальновидный человек. Именно ему отдаёт карту Джим, взяв её у умершего Билли. Это самый надёжный человек, которого мог выбрать Джим. В обмен на жизнь Джима Ливси отдаёт Сильверу карту. Обещает спасти его от виселицы, которая ему обеспечена, если тот вернётся домой.",
+                                            "actions": [
+                                                {
+                                                    "log_id": "switch_state1",
+                                                    "url": "div-action://set_state?state_id=0/developer/1"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "log_id": "developer_card4",
+            "states": [
+                {
+                    "state_id": 0,
+                    "div": {
+                        "type": "container",
+                        "background": [
+                            {
+                                "type": "solid",
+                                "color": "#F0F0F0"
+                            }
+                        ],
+                        "items": [
+                            {
+                                "type": "state",
+                                "div_id": "developer",
+                                "states": [
+                                    {
+                                        "state_id": "1",
+                                        "div": {
+                                            "type": "developer",
+                                            "avatar": "https://api.lorem.space/image/album?w=150&h=150",
+                                            "username": "Джон Сильвер",
+                                            "title": "Нанимается в качестве кока на судно к доктору Ливси.",
+                                            "actions": [
+                                                {
+                                                    "log_id": "switch_state1",
+                                                    "url": "div-action://set_state?state_id=0/developer/2"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "state_id": "2",
+                                        "div": {
+                                            "type": "developer",
+                                            "avatar": "https://api.lorem.space/image/album?w=150&h=150",
+                                            "username": "Джон Сильвер",
+                                            "title": "Нанимается в качестве кока на судно к доктору Ливси. Ходит с костылём на “деревянной” ноге. Хитрый, жадный, ставит деньги во главе всего. Для него нет ничего святого: ни дружба, ни верность слову,ни  благородств:  он старый пират. Он тайно командует пиратами на борту, планирует убить всех “лишних”, после того, как сокровища будут найдены. Получив на острове чёрную метку, решает переметнуться на сторону тех, кто скорее всего победит. Спасает Хокинса от смерти.",
+                                            "actions": [
+                                                {
+                                                    "log_id": "switch_state1",
+                                                    "url": "div-action://set_state?state_id=0/developer/1"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
